@@ -1,11 +1,11 @@
 ---
-title: "Contact | Code Stitch Web Designs"
+title: "Contact | Pink Magnolia Realty | Mint City Web Design"
 description: "Meta description for the page"
-preloadImg: "/assets/images/cabinets2.jpg"
+preloadImg: "/assets/images/pattern-d.jpg"
 permalink: "/contact/"
 eleventyNavigation:
     key: Contact Us
-    order: 600
+    order: 500
     hideOnDesktop: true
 ---
 
@@ -23,10 +23,10 @@ eleventyNavigation:
 
     <section id="int-hero">
         <h1 id="home-h">Contact Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/pattern-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/pattern-d.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/pattern-d.jpg" alt="flower pattern" loading="eager" width="2500" height="1667">
         </picture>
     </section>
 
@@ -41,7 +41,7 @@ eleventyNavigation:
                     <span class="cs-topper">Contact</span>
                     <h2 class="cs-title">Get in Touch</h2>
                     <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+                        We'd love to hear from you! Whether you're looking for your dream home, selling a property, or just have questions about the real estate market, Pink Magnolia Realty is here to help. Reach out to our team and one of our friendly agents will get back to you shortly.
                     </p>
                 </div>
                 <label>
@@ -73,12 +73,10 @@ eleventyNavigation:
                 <!--Phone-->
                 <span class="cs-header">Phone</span>
                 <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
+                <!--Location-->
+                <span class="cs-header">Location</span>
                 <a class="cs-link" href="{{client.address.mapLink}}">
                     {{client.address.lineOne}},
-                    <br/>
-                    {{client.address.lineTwo}},
                     <br/>
                     <span class="cs-block">
                         {{client.address.city}}
@@ -89,8 +87,8 @@ eleventyNavigation:
 
                 <!-- Background Image-->
                 <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
+                    <source media="(min-width: 601px)" srcset="/assets/images/contact-m.webp">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/contact-d.jpg" alt="people" loading="lazy" width="2500" height="1667">
                 </picture>
 
             </div>

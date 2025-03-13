@@ -1,0 +1,587 @@
+---
+title: "Important Info | Pink Magnolia Realty | Mint City Web Design"
+description: "Important information about real estate"
+preloadImg: "/assets/images/pattern-d.jpg"
+permalink: "/learnmore"
+eleventyNavigation:
+    key: Learnmore
+    order: 300
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/learnmore.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Learn More</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/pattern-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/pattern-d.jpg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/pattern-d.jpg" alt="flower pattern" loading="eager" width="2500" height="1667">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-1720">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Useful Information</span>
+            <h2 class="cs-title">Learn More</h2>
+        </div>
+        <div class="cs-flex-group">
+            <div class="cs-button-group">
+                <!--If you need to add another button, make sure to copy and paste from one of the buttons here and increment the data-filter value, so the next one would be data-filter="four", and so on-->
+                <div class="cs-flex">
+                    <button class="cs-option" data-filter="one">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/plus.svg" alt="plus graphic" width="12" height="12" decoding="async" aria-hidden="true">
+                        Need-to-Know
+                    </button>
+                    <button class="cs-option" data-filter="two">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/plus.svg" alt="plus graphic" width="12" height="12" decoding="async" aria-hidden="true">
+                        Buyer's Agent Duties
+                    </button>
+                    <button class="cs-option" data-filter="three">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/plus.svg" alt="plus graphic" width="12" height="12" decoding="async" aria-hidden="true">
+                        Seller's Agent Duties
+                    </button>
+                    <button class="cs-option" data-filter="four">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/plus.svg" alt="plus graphic" width="12" height="12" decoding="async" aria-hidden="true">
+                        Real Estate Dictionary
+                    </button>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/winston-learnmore-m.webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/winston-learnmore-d.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/winston-learnmore-d.jpg" alt="Winston-Salem skyline" width="353" height="493">
+                </picture>
+            </div>
+            <!--We need this wrapper so the absolutely positioned FAQ lists can be positioned to the top of it to so the animations don't amke it overlap the buttons group above it. We needed a wrapper div around it for the faq lists to be relatively positioned to in order to get the effect we wanted-->
+            <div class="cs-wrapper">
+                <!--If you add more FAQ's, copy and paste of of the .cs-faq-grop lists and increment the data-category to the next number. We have three right now, if you added a fourth you'd change it to data-category="four" to correspond to the new button you created in the .cs-button-group. The filter and category data attributes need to match so they can work together-->
+                <ul class="cs-faq-group" data-category="one">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How will we communicate and how often will we do so?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Up to you! We are comfortable with and will most likely use a variation of calls, texts, emails, and in person meetings. At minimum we will communicate about anything pertaining to the house. If we email you something of great importance, we will also text you to let you know it's there. We know how emails can get overlooked.   Some examples include: setting up inspections, conveying information about closing, making sure you feel comfortable with the purchase of the property, and being a messenger between every party with a vested interest in the contract.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What are the overarching steps to buy a house?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            To buy a house any buyer would need to: get pre-approved for a loan/make sure they have enough funds to purchase a property in cash (it's more than just the downpayment), find the house/property that will best suit their needs, negotiate the contract through the preferred Realtor®, go under contract, get on the attorney's schedule to close on the contracted date, inspect the property, negotiate any requested repairs, attend closing, and get the deed recorded in the correct county! Easy peasy! 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How do closings work in NC?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            North Carolina is an Attorney State instead of a Title State. This means that any property sale must be done through a real estate attorney instead of a title company handling the closing. Attorneys still work closely with title companies in North Carolina to make sure that every title/deed transfer is “free and clear” of any parties that are not immediately involved in the current transaction. The attorney usually recommends the buyer purchase title insurance just in case something shows up after closing that could affect the title. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is Earnest Money Deposit?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Earnest Money is a fee (historical evidence suggests a median amount of around 1% of the purchase price that is negotiable within the Offer To Purchase form) paid to the attorney/escrow agent at the beginning of the contract. This fee is held for the seller of the property after the Due Diligence Period has ended as a pseudo “promise to close” while the property is pending. This is deducted from the money a buyer is responsible to bring to closing as a credit for already being paid out and NOT an additional fee on top of the purchase price. Additionally, the Earnest Money Deposit can go back to the buyer if they elect to withdraw from the contract during the Due Diligence Period for any or no reason. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is a Due Diligence Fee?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Similar to the Earnest Money Deposit, the Due Diligence Fee is a fee paid directly from the buyer to the seller. It historically hits at around the 1% range of purchase price offered and is a negotiation point in the Offer. Unlike the Earnest Money Deposit, however, the Due Diligence Fee is almost never refundable to the buyer. In some instances of gross misrepresentation the funds can be released back to the buyer, or the buyer can sue the seller in civil court for the funds back. An example PMR experienced was a seller who had knowingly hidden the evidence of fire damage, a material fact, and the buyer took them to court to gain back the money they paid for Due Diligence and some other incurred fees. In this case the buyer won and the seller had to pay back funds and expenses. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Can you provide service provider recommendations like mortgage lenders or contractors?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Absolutely! Part of our professional services is to work closely with different service providers so we can make the best recommendations for you! At PMR we reject any notion of kick backs, so our recommendations are the best of the best for who we have found! We value your insight into our ever changing list of providers so if you know someone we don't we would love to learn their names, and if you have a bad experience with one of our recommended providers we want to hear about it so we can update our list based on their performance. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What are some of the duties of a buying agent?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            In short, a Buyer's agent is responsible for walking with the buyer every step of the way on their journey to find a great house or property! From scheduling showings, finding property that meets your specific needs, researching houses that match your secret list of needs that only appears after you start searching for a property, to getting your dream property closed and the deed in your hands! There are a million and two other things a buyer's agent does for you in the real estate process, <a>which you can learn in full detail.</a> 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What are some of the duties of a listing agent?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Similar to the duties of a buying agent in North Carolina, the duties of a listing agent are too long to list and <a>can be found in better detail.</a> However, the short of it is a listing agent duties includes: conducting research into the projected fair market value of your property, getting the property professionally measured, getting the property professionally photographed, inputting the property into the local Multiple Listing Service (MLS) so it can be dispersed into the third party vendors (Realtor.com, Zillow, etc.), helping you negotiate the contract that will make you happy, monitor all inspections coming in, help negotiate a Due Diligence Repair Request if it comes in, go over the Closing Disclosure with you, and sit through closing to make sure there are no surprises! 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What type of real estate sales does North Carolina adhere to?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            North Carolina is an “as-is” sale state. That means that the house you put an offer in on is the house you are willing to purchase in its as-is condition. However, most sales in North Carolina also encounter a Due Diligence Request form, which is the form detailing any unknown, unseen details with the property you might want addressed. This request form is another negotiation point for the buyer and the seller to come to an agreeable solution to whatever problems may be there. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What are "Material Facts?"
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Material Facts are facts about the property in question that would effect the buyer's interest in the property. Some examples of material facts are: fire damage, structural damages, foundation cracks, known high levels of radon, if drugs were made within the structure, etc. Notably, some common thoughts about houses are not material and would not need to be disclosed such as someone dying within the house or the presence of suspected ghost activity. In short, Material Facts are things a buyer may not automatically see in the structure, but have or had a great impact on the property. 
+                        </p>
+                    </li>
+                </ul>
+                <ul class="cs-faq-group cs-hidden" data-category="two">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Prior to Finding a House
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            1.  Listen to your goals and advise you on specific ways to meet them in today's market<br>
+                            2.  Provide names of lenders who are reputable, competitive, and creative<br>
+                            3.  When requested, provide a list of questions to ask when shopping for lenders<br>
+                            4.  Work with you and your lender to find the right loan program<br>
+                            5.  Review good faith estimates and help compare costs and monthly payments<br>
+                            6.  Make appointments to see homes in a efficient manner at times convenient to you<br>
+                            7.  Call "For Sale By Owners" that we find to see if their property would meet your needs<br>
+                            8.  Attempt to negotiate commissions with "For Sale By Owners" so that you may buy the house with representation for the lowest cost<br>
+                            9.  Reach out to owners of houses that are not on the market, but may be of interest to you<br>
+                            10. Explain the home buying process from start to finish<br>
+                            11. Provide out of town buyers with a relocation package<br>
+                            12. Call listing agent on properties of interest to ensure properties are available prior to showing<br>
+                            13. Frankly discuss resale potential of houses of interest<br>
+                            14. Arrange to have a licensed agent work with you when we are out of town or unavailable<br>
+                            15. Check MLS listings daily and communicate new listing information to you<br>
+                            16. Provide a list of home inspectors who have received high marks from previous buyers<br>
+                            17. Provide recommendations on first time buyer books, and other timely topics<br>
+                            18. Allow other real estate agents to see your home preferences for reverse prospecting<br>
+                            19. When requested, provide detailed information on market preferences for floor plans/area<br>
+                            20. Provide information/resources on current issues (e.g., oil tanks, lead paint, and radon gas)<br>
+                            21. Provide access to properties for sale at times convenient to you<br>
+                            22. Look carefully at properties which we tour to point out details which may be overlooked<br>
+                            23. Arrive on time to appointments and showings. We pride ourselves on timeliness<br>
+                            24. Pursue continuing education yearly to obtain the latest information and fine tune our skills<br>
+                            25. Attend regular sales meetings to keep up on latest market and industry information<br>
+                            26. Network with hundreds of agents to get leads on new listings which might fit your needs<br>
+                            27. Carry Error and Omission insurance to help protect you from human error<br>
+                            28. Carry business coverage on our automobiles<br>
+                            29. Belong to Winston Salem Regional Association of Realtors, North Carolina Realtors Association,  and National Association of Realtors<br>
+                            30. Belong to Multiple Listing Service<br>
+                            31. Attend seminars on current topics<br>
+                            32. Use our experience every day<br>
+                            33. If needed, provide list of questions to ask other Realtors if you are still selecting a Realtor<br>
+                            34. Provide a map of city neighborhoods<br>
+                            35. Provide information on dispute resolution process used in real estate transactions<br>
+                            36. Provide our objective and honest opinion to questions<br>
+                            37. Carefully guard confidential information about you and your position<br>
+                            38. Preview properties to see if they would be desirable<br>
+                            39. Keep informed about the areas in which you are looking<br>
+                            40. Provide “neighborhood orientation” tours for relocating buyers<br>
+                            41. Educate buyer as to today's market conditions<br>
+                            42. Provide flashlight and measuring tape if needed when viewing houses<br>
+                            43. Use the latest technology to communicate and find information<br>
+                            44. Provide information on inspection options<br>
+                            45. Keep an even temper, even in times of adversity<br>
+                            46. Care about our client's comfort and best interest<br>
+                            47. Have fun!
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                After Identifying a House of Interest
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            48. Pull tax records on property of interest<br>
+                            49. Provide, when requested, property archive report on property of interest<br>
+                            50. Provide resources for information on school performance<br>
+                            51. Confirm with city that the property is on sewer<br>
+                            52. Pull septic records for homes on septic<br>
+                            53. Pull permits on file for properties of interest<br>
+                            54. Use sales agreement forms drafted and continually updated by Association of Realtors<br>
+                            55. Provide disclosure forms to seller to assure representations to you are made in writing<br>
+                            56. Timely present offer to seller or seller's agent<br>
+                            57. Provide information to you on seller, whatever may be known<br>
+                            58. Provide you with specific market data for property of interest (i.e.: comparable sales, average days on market, what the seller paid for property and when, current mortgage information)<br>
+                            59. Follow up on questions with listing agents regarding houses of interest and report back promptly when you want us to<br>
+                            60. Provide information on price appreciation in the defined areas<br>
+                            61. Provide assistance in reviewing nonstandard forms which may need to be signed<br>
+                            62. Help to determine the value of a property prior to your making an offer<br>
+                            63. Help to inform you of standard procedures or practices in current market<br>
+                            64. Discuss standard contingencies<br>
+                            65. Show you amenities found in neighborhoods of interest (restaurants, community centers, etc.)
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                After Offer is Accepted
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            66. Make appointment for home inspections<br>
+                            67. Work with lender to order the appraisal<br>
+                            68. Provide, when requested, utility cost information on properties of interest<br>
+                            69. Provide list of utility companies for home purchased<br>
+                            70. Attend home inspection and any other inspections necessary<br>
+                            71. Provide names and numbers of reputable contractors for bids or information<br>
+                            72. Call lender on a regular basis to make sure the loan process is going smoothly<br>
+                            73. Attend appraisal (unless drive by only)<br>
+                            74. Provide information to appraiser as needed<br>
+                            75. Provide property access to contractors to get bids on repairs if necessary<br>
+                            76. Negotiate your position strongly and effectively<br>
+                            77. Review inspection report and help you prioritize items<br>
+                            78. Thoroughly read all disclosures provided by seller and help identify potential red flags<br>
+                            79. Deliver paperwork and information quickly to all parties<br>
+                            80. Deliver the Due Diligence Fee to seller's agent<br>
+                            81. Deliver the Earnest Money to closing attorney with all necessary paperwork<br>
+                            82. Work with closing attorney and communicate any concerns promptly<br>
+                            83. Attend signing of papers to explain paperwork<br>
+                            84. Review closing statement to make sure it is accurate and correct<br>
+                            85. Perform walk through inspections with you to ascertain that conditions of sale are met<br>
+                            86. Provide measurements of rooms for planning furniture, etc.<br>
+                            87. Coordinate appointments to sign documents<br>
+                            88. Coordinate exchange of keys<br>
+                            89. Coordinate access to property by contractors prior to closing<br>
+                            90. Provide buyer with a copy of all documents signed by buyer<br>
+                            91. Provide sales agreement to lender to complete loan process<br>
+                            92. Review sales agreement with buyer so that all terms are familiar<br>
+                            93. Put the home inspection report in context for seller and listing agent, and help them understand our requests for repairs<br>
+                            94. Coordinate re-inspection of repairs by lender if necessary<br>
+                            95. Provide complimentary market analysis on home for tax appeals, PMI removal appeals, and financial planning<br>
+                            96. Answer questions that might arise after the sale is closed<br>
+                            97. Maintain a file in our office with all pertinent information should you need info or copies in the future
+                        </p>
+                    </li>
+                </ul>
+                <ul class="cs-faq-group cs-hidden" data-category="three">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Pre-Listing Duties
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            1.  Make appointment with seller for listing presentation<br>
+                            2.  Send seller a written or e-mail  confirmation of listing appointment and call to confirm<br>
+                            3.  Review pre-appointment questions<br>
+                            4.  Research all comparable currently listed properties<br>
+                            5.  Research sales activity from Local  MLS Broker Marketplaces and public records database<br>
+                            6.  Research Average Days on Market for property of this type, price range, and location<br>
+                            7.  Download and review property tax roll/assessor information<br>
+                            8.  Prepare preliminary Comparable  Market Analysis (CMA) to establish fair market value<br>
+                            9.  Obtain copy of subdivision plat/ complex lay-out<br>
+                            10. Research property's ownership and deed type<br>
+                            11. Research property's public  record information for lot size and dimensions<br>
+                            12. Research and verify legal description<br>
+                            13. Research property's land use coding and deed restrictions<br>
+                            14. Research property's current use and zoning<br>
+                            15. Verify legal names of owner(s) in  county's public property records<br>
+                            16. Prepare listing presentation package with above materials<br>
+                            17. Perform exterior Curb Appeal  Assessment of subject property<br>
+                            18. Compile a formal file on property<br>
+                            19. Confirm current public schools and explain impact of schools on  market value<br>
+                            20. Review listing appointment checklist to ensure all steps and  actions are completed<br>
+                            21. Review Obsolete Property  Rehabilitation Act (OPRA) Report from Township for all permitted records<br>
+                            22. Add client into your database<br>
+                            23. Give seller an overview of current  market conditions and projections<br>
+                            24. Tour property<br>
+                            25. Review agent's and company's  credentials and accomplishments in the market<br>
+                            26. Present company's profile and  position or niche in the marketplace<br>
+                            27. Present preliminary CMA to seller,  including comparable properties, sold properties, current listings, and  expired listings<br>
+                            28. Offer pricing strategy with updates to CMA based on tour of home and  updates, upgrades professional judgment, and current market conditions<br>
+                            29. Discuss goals with seller to market effectively<br>
+                            30. Explain market power and benefits of Local MLS Broker Marketplaces<br>
+                            31. Explain market power of web marketing, IDX and REALTOR.com<br>
+                            32. Explain the work you do behind the scenes and your availability on weekends<br>
+                            33. Explain role in screening for qualified  buyers and protect sellers from curiosity seekers<br>
+                            34. Present and discuss strategic master  marketing plan<br>
+                            35. Explain transaction/agency brokerage relationship<br>
+                            36. Review and explain all clauses in  listing contract and addendum,  then obtain seller's signature once  property is under listing agreement<br>
+                            37. Review current title information<br>
+                            38. Gather square footage/measure  overall and heated square footage as required<br>
+                            39. Measure interior room sizes<br>
+                            40. Confirm lot size via owner's copy of certified survey, if available<br>
+                            41. Note all unrecorded property liens,  agreements, easements<br>
+                            42. Obtain house plans, if applicable and available<br>
+                            43. Review house plans and make copy<br>
+                            44. Prepare showing instructions for  buyers' agents and showing times with seller<br>
+                            45. Discuss possible buyer financing  alternatives and options with seller<br>
+                            46. Review current appraisal if available<br>
+                            47. Identify Homeowner Association  manager if applicable<br>
+                            48. Verify Homeowner Association Fees  with manager—mandatory or optional, plus fees<br>
+                            49. Order copy of Homeowner  Association bylaws, if applicable<br>
+                            50. Research electricity availability,  supplier's name, and phone number<br>
+                            51. Have utility companies provide  average utility usage from last 12 months of bills<br>
+                            52. Research and verify city sewer/septic  tank system<br>
+                            53. Calculate average water fees or rates from last 12 months of bills<br>
+                            54. Confirm well status, depth and  output from Well Report<br>
+                            55. Natural Gas: Research/verify availability, supplier's name, and phone number<br>
+                            56. Verify security system, current terms of service and whether owned or leased<br>
+                            57. Verify if seller has transferable Termite Bond<br>
+                            58. Ascertain need for lead-based paint disclosure<br>
+                            59. Prepare detailed list of property  amenities and assess market impact<br>
+                            60. Prepare detailed list of property's  inclusions and conveyances with sale<br>
+                            70. Compile list of completed repairs and maintenance items<br>
+                            71. Send vacancy checklist to seller if  property is vacant and register the property with the township if it is  vacant or a rental home<br>
+                            72. Explain benefits of Homeowner  Warranty to seller<br>
+                            73. Assist sellers with completion and  submission of Homeowner Warranty Application<br>
+                            74. Place Homeowner Warranty in  property file for conveyance at time of sale<br>
+                            75. Have extra key made for lockbox and one for your file<br>
+                            76. Verify if property has rental units involved<br>
+                            77. If the property does have rental units, make copies of all leases for retention  in listing file<br>
+                            78. Verify all rents and deposits<br>
+                            79. Inform tenants of listing and discuss  how showings will be handled<br>
+                            80. Arrange for installation of yard sign<br>
+                            81. Complete new listing checklist<br>
+                            82. Review curb appeal assessment  and provide suggestions to improve saleability<br>
+                            83. Review interior décor assessment and suggest changes to shorten time on market<br>
+                            84. Load listing into transaction management software program<br>
+                            85. Prepare Local MLS Broker Marketplaces Profile Sheet<br>
+                            86. Enter property data from Profile  Sheet into Local MLS Broker Marketplaces Database<br>
+                            87. Proofread Local MLS Broker Marketplaces database listing for accuracy— including proper placement in map<br>
+                            88. Add property to company's active  listings list<br>
+                            89. Provide seller copies of the listing  agreement and Local MLS Broker Marketplaces Profile Sheet within 48 hours or within the time period  of Local MLS Broker Marketplace guidelines<br>
+                            90. Take additional photos for upload into Local MLS Broker Marketplaces  and use in fliers<br>
+                            91. Create print and internet ads with  seller's input<br>
+                            92. Coordinate showings with owners, tenants, and other agents<br>
+                            93. Return all calls<br>
+                            94. Install electronic lock box if  authorized. Program agreed-to showing times<br>
+                            95. Prepare mailing and contact list<br>
+                            96. Generate mail-merge letters to  contact list<br>
+                            97. Order Just Listed labels and reports<br>
+                            98. Prepare fliers and feedback reports<br>
+                            99. Review comparable Local MLS Broker  Marketplaces regularly to ensure  property remains competitive<br>
+                            100.    Prepare property marketing brochure for seller's review<br>
+                            101.    Arrange for printing or copying of marketing brochures or fliers<br>
+                            102.    Place marketing brochures in all  company agent mailboxes<br>
+                            103.    Upload listing to company and agent Internet site, if applicable<br>
+                            104.    Mail out <i>Just Listed</i> notice to all neighborhood residents<br>
+                            105.    Advise network referral program of listing<br>
+                            106.    Provide marketing data to buyers  through international relocation network buyers<br>
+                            107.    Provide marketing data to buyers  coming from referral network<br>
+                            108.    Provide <i>Special Feature</i> cards for marketing, if applicable<br>
+                            109.    Submit ads to company's participating internet real estate sites<br>
+                            110.    Price changes conveyed promptly to  all internet groups<br>
+                            111.    Reprint/supply brochures promptly  as needed<br>
+                            112.    Feedback e-mails sent to buyers'  agents after showings<br>
+                            113.    Review weekly market study<br>
+                            114.    Discuss with sellers any feedback  from showings to determine if  changes are needed<br>
+                            115.    Set up marketing reports on  showing-time application and company website<br>
+                            116.    Place regular weekly update calls to seller to discuss marketing and pricing<br>
+                            117.    Promptly enter price changes in the Local MLS Broker Marketplaces database
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Offers
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            118.    Receive and review all <i>Offer to  Purchase</i> contracts submitted by buyers' agents<br>
+                            119.    Evaluate offer(s) and prepare a net  sheet for the owner for comparison  purposes<br>
+                            120.    Explain merits and weakness of each offer to sellers<br>
+                            121.    Contact buyers' agents to review buyer's qualifications and discuss offer<br>
+                            122.    Deliver <i>Seller's Disclosure</i> to buyer upon request and prior to offer if possible.<br>
+                            123.    Upload to the Local MLS Broker Marketplaces additional documents at time of listing<br>
+                            124.    Confirm buyer is pre-qualified by calling loan officer<br>
+                            125.    Obtain buyers' pre-qualification letter from loan officer if not submitted  with offer<br>
+                            126.    Negotiate all offers per seller's direction on seller's behalf, set time  limit for loan approval and closing<br>
+                            127.    Prepare and convey counteroffers, acceptance or amendments to buyer's agent<br>
+                            128.    Create excel spreadsheets for easy review on multiple bids<br>
+                            129.    Email or send copies of contract  and all addendum's to the closing  attorney or title company<br>
+                            130.    When <i>Offer to Purchase</i> contract is accepted, deliver to buyer's agent
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Contracts
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            131.    Record and promptly deposit buyer's  earnest money in escrow account<br>
+                            132.    Disseminate under-contract showing  restrictions as seller requests<br>
+                            133.    Deliver copies of fully signed <i>Offer to Purchase</i> contract to seller<br>
+                            134.    Deliver copies of <i>Offer to Purchase</i> contract to lender<br>
+                            135.    Provide copies of signed <i>Offer to Purchase</i> contract for office file<br>
+                            136.    Advise seller of additional offers  submitted between contract and closing<br>
+                            137.    Change status in Local MLS Broker Marketplaces to <i>Sale Pending</i><br>
+                            138.    Update transaction management program to show <i>Sale Pending</i><br>
+                            139.    Provide credit report information  to seller if property will be seller financed<br>
+                            140.    Assist buyer with obtaining financing, if applicable, and follow-up as necessary<br>
+                            141.    Coordinate with lender on discount  points being locked in with dates 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Inspections
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            142.    Deliver unrecorded property information to buyer<br>
+                            143.    Order septic system inspection, if applicable<br>
+                            144.    Receive and review septic system report, and assess any possible impact on sale<br>
+                            145.    Deliver copy of septic system inspection report lender and buyer<br>
+                            146.    Deliver Well Flow Test Report copies to lender and buyer, and property listing file<br>
+                            147.    Verify termite inspection ordered<br>
+                            148.    Verify mold inspection ordered, if required<br>
+                            149.    Confirm verifications of deposit and buyer's employment have been returned<br>
+                            150.    Follow loan processing through to the underwriter<br>
+                            151.    Add lender and other vendors to your management program so agents, buyer, and seller can track progress of sale<br>
+                            152.    Contact lender weekly to ensure processing is on track<br>
+                            153.    Relay final approval of buyer's loan application to seller<br>
+                            154.    Coordinate with seller for buyer's  professional home inspection<br>
+                            155.    Review home inspector's report<br>
+                            156.    Enter completion into transaction  management tracking program<br>
+                            157.    Explain seller's responsibilities, and recommend an attorney interpret any clauses in the contract 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Home Inspections
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            158.    Ensure seller's compliance with <i>Home Inspection Clause</i> requirements<br>
+                            159.    Assist seller with identifying contractors to perform any required repairs<br>
+                            160.    Negotiate payment, and oversee all required repairs on seller's behalf, if needed
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                The Appraisal
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            161.    Schedule appraisal<br>
+                            162.    Provide to appraiser any comparable sales used in market pricing<br>
+                            163.    Follow-up on appraisal
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Process for Closing
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            164.    Enter completion into transaction  management program<br>
+                            165.    Assist seller in questioning appraisal report if it seems too low<br>
+                            166.    Get contract signed by all parties<br>
+                            167.    Coordinate closing process with  buyer's agent and lender<br>
+                            168.    Update closing forms and files<br>
+                            169.    Ensure all parties have all forms and  information needed to close the sale<br>
+                            170.    Select location where closing will be held<br>
+                            171.    Confirm closing date and time, and  notify all parties<br>
+                            172.    Assist in solving any title problems or in obtaining death certificates<br>
+                            173.    Work with buyer's agent in scheduling buyer's final walk-thru prior to closing<br>
+                            174.    Double check all tax, homeowners'  association dues, utility, and applicable prorations<br>
+                            175.    Request final closing figures from  closing agent (attorney or title company)<br>
+                            176.    Receive and carefully review closing  figures to ensure accuracy of preparation<br>
+                            177.    Confirm buyer and buyer's agent have received title insurance commitment<br>
+                            178.    Provide homeowners warranty for availability at closing<br>
+                            179.    Forward closing documents to absentee seller as requested<br>
+                            180.    Review documents with closing agent (attorney)<br>
+                            181.    Coordinate closing with seller's next  purchase, and resolve any timing problems<br>
+                            182.    Have a <i>no-surprises</i> closing so seller receives a net-proceeds check at  closing<br>
+                            183.    Refer sellers to one of the best agents at their destination, if applicable<br>
+                            184.    Change Local MLS Broker Marketplaces status to <i>Sold.</i> Enter sale date, price, selling broker, etc.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Follow-Up After Closing
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            185.    Share the warranty paperwork for claims in the future<br>
+                            186.    Attempt to clarify and resolve any conflicts about repairs if buyer is not satisfied<br>
+                            187.    Respond to any calls and provide any information required from office files<br>
+                            188.    If a rental, verify all deposits and prorated rents are reflected accurately on the closing statement<br>
+                            189.    Close out listing in your management program 
+                        </p>
+                    </li>
+                </ul>
+                <ul class="cs-faq-group cs-hidden" data-category="four">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Looking to learn common terms that will be used while buying a house? Look no further!
+                            </span>
+                        </button>
+                        <ul class="cs-item-p" style="list-style-type:disc">
+                            <li>"OTP" is the "Offer To Purchase And Contract" standard form 2-T from the North Carloina Realtor and Bar association. It is the main document used during the home buying process for existing residential property. It has some variations for Vacant Land (Form 12-T) and New Construction (Form 800-T), but they all get the job done!</li><br>
+                            <li>"DD" is the abbreviation used for "Due Diligence." Due Diligence is the process of doing any and all inspections the buyer may want done to the house to make sure they are getting into a worthwhile investment.</li><br>
+                            <li>"EM" is the abbreviation for "Earnest Money Deposit" which is the money paid to an escrow agent at the beginning of a contract to show good faith that the buyer will close on the house after the DD period.</li><br>
+                            <li>"MLS" is the abbreviation for the Multiple Listing Service. There are many MLS systems throughout the state of North Carolina, but they all serve the same function. Locally, we subscribe to the Triad MLS to get listing updates in Winston Salem, High Point, Thomasville, Lexington, even up to Surry county! The Charlotte area and western part of the state subscribe to Canopy MLS, and the Triangle area and eastern side of the state subscribe to Triangle MLS.</li><br>
+                            <li>"Material Facts" are any facts dealing with the structure of the property that may or may not be immediately visible to a customer or agent. Examples could include fire damage, foundation cracks, high levels of radon and more.</li><br>
+                            <li>"CS/Closing Disclosure" is the final form you will see before closing from the attorney. It has all of the monies exchanged within the contract so buyers and sellers know what they will have to bring to the closing table. It will outline lender costs, lawyer costs, county recording costs, taxes and agent compensation where applicable so both parties within the transaction can see exactly where everything falls into place.</li><br>
+                            <li>"Closing" is the process of signing all the final paperwork at the attorney's office. This will often consist of a buyer signing all the final loan documents, signing the new deed iinto the buyer's name, signing off on the final CD, and a slew of other legal documents needed by the state and/or county to record the new deed.</li><br>
+                            <li>"Recording" is the process immediately after closing. This is when the lawyer communicates with the local county government to get the deed and bill of sale recorded in the county records office. Once the deed is recorded with the county, the buyer officially owns the property and can move in!</li><br>
+                            <li>"Realtor®" is a licensed real estate agent who has agreed to join the National Association of Realtors to bring about a higher level of ethical discipline for their clients. Joining NAR also lets your Realtor have access to the standardized forms created by your state's NAR association and the state Bar association so every real estate deal will look the same within your state. Plus, with regular updates to the forms, they are able to keep all realtor clients as safe as possible within a contract period.</li><br>
+                            <li>"Real Estate Agent" is a person who has taken the required 75 hour course, passed the class test, passed the state and national test. They are then a licensed real estate agent for the state in which they tested/reside on a provisional status. It's similar to getting your learners permit to drive and needing someone to be in the car with you. They then have to complete an additional 90 hours of post-licensing courses to become a full broker.</li><br>
+                            <li>"Radon" is a scentless invisible gas that naturally occurs throughout North Carolina and other states. In homes where there are elevated levels of radon, over 4 picocuries per liter (pCi/L) on average, it can lead to the development of lung cancer. However, radon mitigation systems exist to ensure radon is not a harmful substance in a home with high levels of radon. If a home does not have a radon mitigation system in place, it would be important for a buyer to test for radon levels during their routine home inspeciton.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    {% include 'components/cta.html' %}
+{% endblock %}

@@ -1,0 +1,34 @@
+---
+title: "About Steven | Pink Magnolia Realty | Mint City Web Design"
+description: "A boutique brokerage focused on putting our clients needs at the forefront of everything we do!"
+preloadImg: "/assets/images/imagename.format"
+permalink: "/about/steven"
+eleventyNavigation:
+    key: Steven facts
+    order: 220
+    parent: About Us
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/steven.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">About Steven</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/pattern-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/pattern-d.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/pattern-d.jpg" alt="flower pattern" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+    <b>Steven McGee,</b> a proud North Carolina native, has just under 6 years of experience. With a background in Media & Journalism and Religious Studies from The University of North Carolina at Chapel Hill, Steven combines his strong communication skills with a passion for real estate to deliver outstanding service. As the Qualifying Broker and Chief Marketing Expert, he's dedicated to making sure every client's needs are met with the highest level of care and professionalism.
+
+{% endblock %}

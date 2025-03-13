@@ -1,0 +1,49 @@
+---
+title: "About Sharon | Pink Magnolia Realty | Mint City Web Design"
+description: "A boutique brokerage focused on putting our clients needs at the forefront of everything we do!"
+preloadImg: "/assets/images/imagename.format"
+permalink: "/about/sharon"
+eleventyNavigation:
+    key: Sharon facts
+    order: 210
+    parent: About Us
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/sharon.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">About Sharon</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/pattern-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/pattern-d.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/pattern-d.jpg" alt="flower pattern" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Quote                      -->
+    <!-- ============================================ -->
+
+    <section id="quote-561">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Sharon McGee</span>
+                <p class="cs-text">
+                     is a full-time real estate agent with almost 8 years of experience. Sharon's philosophy is simple: her job is not to "sell" a home, but to ensure her clients find the perfect home that meets both their wants and their budget. When she accomplishes this, her clients often become friends. For Sharon, that's the ultimate 5-star review. With certifications as a Pricing Strategy Advisor and Commitment to Excellence Endorsed, Sharon is dedicated to making the home-buying and selling process as smooth and enjoyable as possible.
+                </p>
+                <span class="cs-name">Benjamin Miller</span>
+            </div>
+        </div>
+    </section>
+                                
+
+{% endblock %}

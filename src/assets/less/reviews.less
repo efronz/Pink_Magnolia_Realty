@@ -12,7 +12,7 @@
         padding-bottom: (50/16rem);
 
         .container {
-            max-width: (1320/16rem);
+            max-width: (1440/16rem);
             width: 96%;
         }
 
@@ -26,23 +26,11 @@
             background: #fff;
             max-width: (410/16rem);
             width: 100%;
-            padding: (64/16rem) (30/16rem) (18/16rem) (30/16rem);
+            padding: (50/16rem) (30/16rem) (18/16rem) (30/16rem);
             box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
 
-            .profile {
-                position: absolute;
-                top: calc(-51 / 16 * 1rem);
-                left: (30/16rem);
-                display: block;
-                border-radius: 50%;
-                margin-bottom: (16/16rem);
-                margin-left: 0;
-                height: (99/16rem);
-                width: (99/16rem);
-            }
-
             p {
-                margin-bottom: (28/16rem);
+                margin-bottom: (26/16rem);
                 line-height: 1.5em;
                 text-align: left;
             }
@@ -65,9 +53,13 @@
                 }
 
                 .desc {
-                    display: block;
+                    /* 14px - 16px */
+                    font-size: (16/16rem);
+                    line-height: 1.5em;
                     font-weight: 400;
-                    color: #575757;
+                    margin: 0;
+                    color: var(--bodyTextColor);
+                    display: block;
                 }
 
                 img {
@@ -77,6 +69,7 @@
                     width: (91/16rem);
                 }
             }
+
             &:last-of-type {
                 margin-bottom: 0;
             }
@@ -87,13 +80,13 @@
 /* Tablet */
 @media only screen and (min-width: 48rem) {
     #reviews {
-        padding-top: (150/16rem);
+        padding-top: (26/16rem);
         padding-bottom: (50/16rem);
 
         .container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-evenly;
             padding: 0;
             font-size: ~"min(1.4vw, 1em)";
             column-gap: (30/16rem);
@@ -101,10 +94,10 @@
 
         .review {
             margin: 0;
-            margin-bottom: (150/16rem);
+            margin-bottom: (30/16rem);
 
             &:last-of-type {
-                margin-bottom: (150/16rem);
+                margin-bottom: (30/16rem);
             }
         }
     }
@@ -114,8 +107,9 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #reviews {
+            background-color: var(--medium);
             .review {
-                background: var(--medium);
+                background: var(--dark);
 
                 .name {
                     color: #fff;

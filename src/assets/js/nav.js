@@ -132,7 +132,7 @@ const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
             this.$images = document.querySelectorAll(this.FAQselector)
             
             if ($filters.length === 0) {
-                console.error("No filters found for selector:", this.filtersSelector);
+                skipJSErrors: true;
                 return; // Exit the constructor if no filters are found
             }
             this.$activeFilter.classList.add(this.activeClass)

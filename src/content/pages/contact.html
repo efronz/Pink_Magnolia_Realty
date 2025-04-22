@@ -1,6 +1,6 @@
 ---
 title: "Contact | Pink Magnolia Realty | Mint City Web Design"
-description: "Meta description for the page"
+description: "Contact information"
 preloadImg: "/assets/images/pattern-d.jpg"
 permalink: "/contact/"
 eleventyNavigation:
@@ -60,6 +60,11 @@ eleventyNavigation:
                     How Did You Find Us
                     <input type="text" id="find" name="find-us" placeholder="How did you find us?">
                 </label>
+                <fieldset>
+                    <legend>Do you currently have a realtor?</legend>
+                    <input type="radio" id="realtor_status_yes" name="realtor_status" value="yes_realtor"></input><label for="realtor_status_yes">I have a realtor</label>
+                    <input type="radio" id="realtor_status_no" name="realtor_status" value="no_realtor" checked></input><label for="realtor_status_no">I do not have a realtor</label>
+                </fieldset>
                 <label class="cs-label-message">
                     Message
                     <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
@@ -76,12 +81,8 @@ eleventyNavigation:
                 <!--Location-->
                 <span class="cs-header">Location</span>
                 <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br/>
                     <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
+                        Piedmont Triad, NC
                     </span>
                 </a>
 

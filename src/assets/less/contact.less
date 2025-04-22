@@ -89,6 +89,53 @@
                 border: none;
                 width: 100%;
             }
+
+            fieldset {
+                display: flex;
+                flex-direction: row;
+                flex-basis: content;
+                justify-content: flex-start;
+                align-items: center;
+                /* 12px - 20px */
+                margin-bottom: clamp(0.75rem, 1.3em, 1.25rem);
+                padding-left: 0;
+                padding-right: 20px;
+                font-size: (16/16rem);
+                line-height: 1.5em;
+                font-weight: 700;
+                color: var(--headerColor);
+                border: none;
+
+                label {
+                    display: block;
+                    font-weight: 400;
+                    margin: 12px 16px 4px 4px;
+                    line-height: 32px;
+                }
+
+                input {
+                    appearance: none;
+                    border: 2px solid #999;
+                    border-radius: 50%;
+                    margin: none;
+                    width: 2em;
+                    height: 2em;
+                    box-sizing: border-box;
+                    padding: none;
+                    transition: 0.3s all linear;
+                    margin-right: 1em;
+                    position: relative;
+                    top: 4px;
+
+                    &:hover {
+                        border: 2px solid var(--primary);
+                    }
+
+                    &:checked {
+                        border: 6px solid var(--secondary);
+                    }
+                }
+            }
         }
 
         .cs-right-section {
@@ -209,6 +256,37 @@
             .cs-label-message {
                 width: 100%;
             }
+            fieldset {
+
+                label {
+                    font-weight: 400;
+                    width: auto;
+                    flex-basis: auto;
+                }
+
+                input {
+                    appearance: none;
+                    border: 2px solid #999;
+                    border-radius: 50%;
+                    margin: none;
+                    width: 2em;
+                    height: 2em;
+                    box-sizing: border-box;
+                    padding: none;
+                    transition: 0.3s all linear;
+                    margin-right: 1em;
+                    position: relative;
+                    top: 4px;
+
+                    &:hover {
+                        border: 2px solid var(--primary);
+                    }
+
+                    &:checked {
+                        border: 6px solid var(--secondary);
+                    }
+                }
+            }
         }
     }
 }
@@ -228,6 +306,37 @@
             max-width: (630/16rem);
             label {
                 width: 100%;
+            }
+
+            fieldset {
+                label {
+                    font-weight: 400;
+                    margin-right: 10px;
+                    line-height: 32px;
+                }
+
+                input {
+                    appearance: none;
+                    border: 2px solid #999;
+                    border-radius: 50%;
+                    margin: none;
+                    width: 2em;
+                    height: 2em;
+                    box-sizing: border-box;
+                    padding: none;
+                    transition: 0.3s all linear;
+                    margin-right: 1em;
+                    position: relative;
+                    top: 4px;
+
+                    &:hover {
+                        border: 2px solid var(--primary);
+                    }
+
+                    &:checked {
+                        border: 6px solid var(--secondary);
+                    }
+                }
             }
         }
 
@@ -266,6 +375,36 @@
             .cs-label-message {
                 max-width: 100%;
             }
+            fieldset {
+                label {
+                    font-weight: 400;
+                    margin-right: 24px;
+                    line-height: 32px;
+                }
+
+                input {
+                    appearance: none;
+                    border: 2px solid #999;
+                    border-radius: 50%;
+                    margin: none;
+                    width: 2em;
+                    height: 2em;
+                    box-sizing: border-box;
+                    padding: none;
+                    transition: 0.3s all linear;
+                    margin-right: 1em;
+                    position: relative;
+                    top: 4px;
+
+                    &:hover {
+                        border: 2px solid var(--primary);
+                    }
+
+                    &:checked {
+                        border: 6px solid var(--secondary);
+                    }
+                }
+            }
         }
 
         .cs-right-section {
@@ -284,6 +423,7 @@
             }
 
             #cs-form {
+                fieldset,
                 label,
                 input,
                 textarea {
@@ -293,6 +433,16 @@
                     &::placeholder {
                         /* lighten up the color of the text by 40%*/
                         filter: brightness(1.4);
+                    }
+                }
+                fieldset {
+                    input {
+                        &:hover {
+                            border: 2px solid var(--primary);
+                        }
+                        &:checked {
+                            border: 6px solid var(--primary);
+                        }
                     }
                 }
             }

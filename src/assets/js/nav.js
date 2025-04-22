@@ -30,9 +30,9 @@ function ariaExpanded() {
 document.addEventListener('scroll', (e) => { 
     const scroll = document.documentElement.scrollTop;
     if(scroll >= 100){
-document.querySelector('body').classList.add('scroll')
+        document.querySelector('body').classList.add('scroll')
     } else {
-    document.querySelector('body').classList.remove('scroll')
+        document.querySelector('body').classList.remove('scroll')
     }
 });
 
@@ -41,9 +41,9 @@ document.querySelector('body').classList.add('scroll')
 const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
     for (const item of dropDowns) {
         const onClick = () => {
-        item.classList.toggle('cs-active')
-    }
-    item.addEventListener('click', onClick)
+            item.classList.toggle('cs-active')
+        }
+        item.addEventListener('click', onClick)
     }
                             
 // Add event listeners to each dropdown element for accessibility
